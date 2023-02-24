@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/webp" href="{{ '/icon.webp' | relative_url }}">
+  <style>
+    html {
+      max-width: 43rem;
+      margin: 0 auto;
+      padding: 1em;
+      font: 1rem / 1.5 sans-serif;
+    }
+    body { margin: 0; }
+    h1 { margin-block-start: 0.83em; margin-block-end: 0.83em; text-align: center; }
+    @media (prefers-color-scheme: dark) {
+      html { background-color: black; color: white; }
+      a { color: lightskyblue; }
+      a:visited { color: plum; }
+    }
+  </style>
+  <meta name="theme-color" content="#white">
+  <title>{%- if page.title -%}{{ page.title | smartify }}{%- else -%}{{ site.title | smartify }}{%- endif -%}</title>
+  <meta name="description" content="Error page">
+  <meta name="robots" content="noindex,follow">
+</head>
+<body>
+  <h1>{{ page.title }}</h1>
+</body>
+</html>
