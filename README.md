@@ -1,16 +1,18 @@
 # Jekyll Theme Nixer
 
-The even more barebones cousin of the barebones [Jekyll Theme Nix](https://github.com/michaelnordmeyer/nix) for [Jekyll](https://github.com/jekyll/jekyll), which doesn't need any dependencies except `jekyll-redirect-from`, if you want to redirect pages.
+The even more barebones cousin of the barebones theme [<q>Nix</q>](https://github.com/michaelnordmeyer/jekyll-theme-nix) for [Jekyll](https://github.com/jekyll/jekyll), which doesn't need any dependencies except `jekyll-redirect-from`, if you want to redirect pages. It is optimized for fast build speeds as well.
 
 Its purpose is to be a hard-core minimalistic, single-author theme while not displaying anything more than just the content of posts and a list of posts.
 
 It also changes as little as possible from the default browser settings to improve legibility.
 
+[Demo](https://jekyll-theme-nixer.michaelnordmeyer.com/)
+
 It is meant for people, who are aware that nobody is using RSS feeds anymore. Either because they don't know what they are or how to use them, or they replaced Google Reader with Social Media. So all visitors are coming from search engines – let's be honest, Google – and won't read other posts, unless they are linked in the post itself.
 
 And people coming from hacker news or related sites know how to change the URL in the browser's address bar.
 
-If you think this goes too far, use the above mentioned [Jekyll Theme Nix](https://github.com/michaelnordmeyer/nix) instead.
+If you think this goes too far, use the above mentioned [Jekyll theme <q>Nix</q>](https://github.com/michaelnordmeyer/jekyll-theme-nix) instead.
 
 ## Limited Features
 
