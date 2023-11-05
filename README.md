@@ -1,6 +1,6 @@
 # Jekyll Theme Nixer
 
-The even more barebones cousin of the barebones theme [<q>Nix</q>](https://github.com/michaelnordmeyer/jekyll-theme-nix) for [Jekyll](https://github.com/jekyll/jekyll), which doesn't need any dependencies except `jekyll-redirect-from`, if you want to redirect pages. It is optimized for fast build speeds as well.
+The even more barebones cousin of the barebones theme [“Nix”](https://github.com/michaelnordmeyer/jekyll-theme-nix) for [Jekyll](https://github.com/jekyll/jekyll), which doesn't need any dependencies except `jekyll-redirect-from`, if you want to redirect pages. It is optimized for fast build speeds as well.
 
 Its purpose is to be a hard-core minimalistic, single-author theme while not displaying anything more than just the content of posts and a list of posts.
 
@@ -12,7 +12,7 @@ It is meant for people, who are aware that nobody is using RSS feeds anymore. Ei
 
 And people coming from hacker news or related sites know how to change the URL in the browser's address bar.
 
-If you think this goes too far, use the above mentioned [Jekyll theme <q>Nix</q>](https://github.com/michaelnordmeyer/jekyll-theme-nix) instead.
+If you think this goes too far, use the above mentioned [Jekyll theme “Nix”](https://github.com/michaelnordmeyer/jekyll-theme-nix) instead.
 
 ## Limited Features
 
@@ -52,9 +52,9 @@ The favicon is currently `icon.webp` for the light mode, and there's also a dark
 
 ### Nixer?
 
-<q>Nix</q> is the grammatically incorrect form of the German <q>nichts</q>, which in English means <q>nothing</q>. It's colloquially used to stress the nothingness. <q>Nixer</q> is the even more grammatically incorrect comparative of that, which colloquially may or may not being used at all.
+“Nix” is the grammatically incorrect form of the German “nichts”, which in English means “nothing”. It's colloquially used to stress the nothingness. “Nixer” is the even more grammatically incorrect comparative of that, which colloquially may or may not being used at all.
 
-Or, if you will, it could be UNIX without the <q>U</q>, because of the theme's somewhat archaic properties, but even more archaic.
+Or, if you will, it could be UNIX without the “U”, because of the theme's somewhat archaic properties, but even more archaic.
 
 ## Installation
 
@@ -96,6 +96,6 @@ Finally, add `jekyll-remote-theme` to your plugin section in `_config.yml` as we
 
 ## Sitemap.xml
 
-A s`itemap.xml` is already included in the theme and doesn't need a dependency to `jekyll-sitemap`. For a standard Jekyll installation, it works out-of-the-box.
+A `sitemap.xml` is already included in the theme and doesn't need a dependency to `jekyll-sitemap`. For a standard Jekyll installation, it works out-of-the-box.
 
 If hosted with the Github pages plugin, this plugin is already included and will automatically be used instead. To overwrite this, the file has to be copied manually from the theme's repository root to the site's repository root.
