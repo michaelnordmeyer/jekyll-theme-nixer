@@ -19,7 +19,7 @@ If you think this goes too far, use the above mentioned [Jekyll theme “Nix”]
 - Dark mode, because we want to be respectful
 - Posts, but no backlink to homepage
 - No Pages, except custom error pages
-- No visible authors, dates, categories, or tags
+- No visible authors, dates, categories, or tags on posts and pages
 - No header or footer
 - No pagination for the home page
 - No feed.xml
@@ -96,6 +96,6 @@ Finally, add `jekyll-remote-theme` to your plugin section in `_config.yml` as we
 
 ## Sitemap.xml
 
-A `sitemap.xml` is already included in the theme and doesn't need a dependency to `jekyll-sitemap`. For a standard Jekyll installation, it works out-of-the-box.
+A `sitemap.xml` is already included in the theme and doesn't need a dependency to the `jekyll-sitemap` plugin. For a standard Jekyll installation, it works out-of-the-box if this files is copied to the Jekyll directory.
 
 If hosted with the Github pages plugin, this plugin is already included and will automatically be used instead. To overwrite this, the file has to be copied manually from the theme's repository root to the site's repository root.
