@@ -8,6 +8,8 @@ It also changes as little as possible from the default browser settings to impro
 
 [Demo](https://jekyll-theme-nixer.michaelnordmeyer.com/)
 
+![Screenshot](/screenshot.png)
+
 It is meant for people, who are aware that nobody is using RSS feeds anymore. Either because they don't know what they are or how to use them, or they replaced Google Reader with Social Media. So all visitors are coming from search engines – let's be honest, Google – and won't read other posts, unless they are linked in the post itself.
 
 And people coming from hacker news or related sites know how to change the URL in the browser's address bar.
@@ -77,6 +79,10 @@ theme: jekyll-theme-nixer
 ```
 
 Make sure that this is the only `theme:` in `_config.yml`, and that there are no other `remote-theme:`. Afterwards run `bundle install`, and `bundle update` to update it, if there's a new version.
+
+```sh
+bundle install
+```
 
 ### Installation as Remote Theme
 

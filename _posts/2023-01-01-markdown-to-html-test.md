@@ -99,7 +99,9 @@ This tag shows **bold** text.
 
 ## HTML5 Tags Supported by Github-Flavored Markdown
 
-### Tables (Without Caption)
+### Tables
+
+Markdown ables don't support captions, but header and footer.
 
 | Character                                                                      | Appearance |
 | ------------------------------------------------------------------------------ | ----------:|
