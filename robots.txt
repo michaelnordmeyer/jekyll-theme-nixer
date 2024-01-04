@@ -1,1 +1,2 @@
-Sitemap: https://jekyll-theme-nixer.michaelnordmeyer.com/sitemap.xml
+User-agent: *
+Disallow: /
