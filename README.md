@@ -1,6 +1,6 @@
 # Jekyll Theme Nixer
 
-The even more barebones cousin of the barebones theme [“Nix”](https://github.com/michaelnordmeyer/jekyll-theme-nix) for [Jekyll](https://github.com/jekyll/jekyll), which doesn't need any dependencies except `jekyll-redirect-from`, if you want to redirect pages. It is optimized for fast build speeds as well.
+The even more barebones cousin of the barebones theme [“Nix”](https://github.com/michaelnordmeyer/jekyll-theme-nix) for [Jekyll](https://github.com/jekyll/jekyll). It is optimized for fast build speeds as well.
 
 Its purpose is to be a hard-core minimalistic, single-author theme while not displaying anything more than just the content of posts and a list of posts.
 
@@ -21,18 +21,18 @@ If you think this goes too far, use the above mentioned [Jekyll theme “Nix”]
 - Dark mode, because we want to be respectful
 - Posts, but no backlink to homepage
 - No Pages, except custom error pages
-- No visible authors, dates, categories, or tags on posts and pages
+- No visible dates, authors, categories, or tags on posts and pages
 - No header or footer
 - No pagination for the home page
-- No feed.xml
-- A sitemap.xml, because search engines should index us
+- No feeds
+- A sitemap.xml, because search engines should index us properly
 - No semantic info like Open Graph, Twitter cards, JSON-LD, or Microdata
 
 ## Feature Creep and Bloat
 
 To have titles with proper spelling in the post list, you have to have a `title` in your front matter. You can leave it out, but then some characters cannot be displayed, most notably the apostrophe (`'`) or anything, which cannot reasonably put in the post's filename.
 
-Rest assured, this is the only bloat, as we already removed the date with the rest from the front matter, because it can reliably taken from the post's filename. And who has time to post more than once a day, anyway.
+Rest assured, this is the only bloat, as we already removed the date with the rest from the front matter, because it can reliably taken from the post's filename for internal processing. And who has time to post more than once a day, anyway.
 
 ## Minutiae
 
@@ -40,17 +40,17 @@ Rest assured, this is the only bloat, as we already removed the date with the re
 
 The default browser link colors don't look great, if they're inverted in dark mode, just like white is inverted to black for the background:
 
-- Link: <span style="background-color: white; color: #0000ee">&nbsp;#0000ee&nbsp;</span>, inverted <span style="background-color: black; color: #ffff11">&nbsp;#ffff11&nbsp;</span>
-- Link visited: <span style="background-color: white; color: #551a8b">&nbsp;#551a8b&nbsp;</span>, inverted <span style="background-color: black; color: #aae574">&nbsp;#aae574&nbsp;</span>
+- Link: <span style="background-color: white; color: #0000ee">&nbsp;#0000ee&nbsp;</span> => <span style="background-color: black; color: #ffff11">&nbsp;#ffff11&nbsp;</span>
+- Link visited: <span style="background-color: white; color: #551a8b">&nbsp;#551a8b&nbsp;</span> => <span style="background-color: black; color: #aae574">&nbsp;#aae574&nbsp;</span>
 
-Therefore, they're set to somewhat lighter versions of the default colors.
+Therefore, they're set to somewhat lighter versions of the default colors:
 
-- Link: <span style="background-color: white; color: #0000ee">&nbsp;#0000ee&nbsp;</span>, inverted <span style="background-color: black; color: lightskyblue">&nbsp;lightskyblue&nbsp;</span>
-- Link visited: <span style="background-color: white; color: #551a8b">&nbsp;#551a8b&nbsp;</span>, inverted <span style="background-color: black; color: plum">&nbsp;plum&nbsp;</span>
+- Link: <span style="background-color: white; color: #0000ee">&nbsp;#0000ee&nbsp;</span> => <span style="background-color: black; color: lightskyblue">&nbsp;lightskyblue&nbsp;</span>
+- Link visited: <span style="background-color: white; color: #551a8b">&nbsp;#551a8b&nbsp;</span> => <span style="background-color: black; color: plum">&nbsp;plum&nbsp;</span>
 
 ### Favicon
 
-The favicon is currently `icon.webp` for the light mode, and there's also a dark variant `icon-dark.webp`.
+`icon.webp` is the favicon for the light mode, and there's also a dark variant `icon-dark.webp` for dark mode. If you want to use them, these files have to be copied manually from the demo's repository root to your site's repository root.
 
 ### Nixer?
 
@@ -60,39 +60,47 @@ Or, if you will, it could be UNIX without the “U”, because of the theme's so
 
 ## Installation
 
-Installation from Gem is recommended, but using a remote theme is also possible, even though it will increase build time a little, depending on your internet connection, because the theme will be downloaded during each build. Gems are installed locally.
+Installation from Gem is recommended, but using a remote theme is also possible, even though it will increase build times a little, depending on your internet connection and the size of the theme download, because it will be downloaded during each build. Gems are installed locally.
 
-GitHub pages gem users need to use the remote theme method.
+GitHub Pages gem users need to use the remote theme method.
 
 ### Installation from Gem
 
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jekyll-theme-nixer"
+gem "jekyll-theme-nixer", group: [:jekyll_plugins]
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+Then run `bundle` in your terminal.
+
+```sh
+bundle
+```
+
+Also add the theme to your Jekyll site's `_config.yml`:
 
 ```yaml
 theme: jekyll-theme-nixer
 ```
 
-Make sure that this is the only `theme:` in `_config.yml`, and that there are no other `remote-theme:`. Afterwards run `bundle install`, and `bundle update` to update it, if there's a new version.
-
-```sh
-bundle install
-```
+Make sure that this is the only `theme:` in `_config.yml`, and that there are no other `remote-theme:`.
 
 ### Installation as Remote Theme
 
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jekyll-remote-theme"
+gem "jekyll-remote-theme", group: [:jekyll_plugins]
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+Then run `bundle` in your terminal.
+
+```sh
+bundle
+```
+
+Finally add the remote theme to your Jekyll site's `_config.yml`:
 
 ```yaml
 remote_theme: michaelnordmeyer/jekyll-theme-nixer
@@ -100,10 +108,6 @@ remote_theme: michaelnordmeyer/jekyll-theme-nixer
 
 Make sure that this is the only `remote_theme:` in `_config.yml`, and that there are no other `theme:`.
 
-Finally, add `jekyll-remote-theme` to your plugin section in `_config.yml` as well.
+## Styled Sitemap.xml
 
-## Sitemap.xml
-
-A `sitemap.xml` is already included in the theme and doesn't need a dependency to the `jekyll-sitemap` plugin. For a standard Jekyll installation, it works out-of-the-box if this files is copied to the Jekyll directory.
-
-If hosted with the Github pages plugin, this plugin is already included and will automatically be used instead. To overwrite this, the file has to be copied manually from the theme's repository root to the site's repository root.
+A `sitemap.xsl` is included in the theme to style the `sitemap.xml` while being displayed in the browser. For a standard Jekyll installation, they work out-of-the-box if both files are copied to the Jekyll directory.
