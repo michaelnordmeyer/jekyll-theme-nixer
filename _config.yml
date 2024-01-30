@@ -39,7 +39,14 @@ theme_settings:
 ## https://jekyllrb.com/docs/configuration/front-matter-defaults/
 defaults:
   - scope:
-      path: ""
-      type: "posts"
+      path: "" # an empty string here means all files in the project (allows globs, but is slow)
+      type: posts # type (optional): posts, pages, drafts, or any collection
     values:
-      layout: "post"
+      layout: post
+  - scope:
+      path: "error"
+      type: pages
+    values:
+      layout: error
+      permalink: /:path/:basename
+      sitemap: false
