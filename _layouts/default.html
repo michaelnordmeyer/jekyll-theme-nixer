@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="{{ site.theme_settings.favicon_media_type }}" media="(prefers-color-scheme: light)" href="{{ site.theme_settings.favicon | relative_url }}">
-  <link rel="icon" type="{{ site.theme_settings.favicon_media_type }}" media="(prefers-color-scheme: dark)" href="{{ site.theme_settings.favicon_dark | relative_url }}">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
+{% include head.html %}
+  <title>{%- if page.title -%}{{ page.title | smartify }}{%- else -%}{{ site.title | smartify }}{%- endif -%}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | smartify }}{% else %}{{ site.description | smartify }}{% endif %}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
   <style>
     :root { color-scheme: light dark; }
     html {
@@ -36,9 +31,6 @@
     }
     .footnotes { margin: 0; font-size: small; }
   </style>
-  <title>{%- if page.title -%}{{ page.title | smartify }}{%- else -%}{{ site.title | smartify }}{%- endif -%}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | smartify }}{% else %}{{ site.description | smartify }}{% endif %}">
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
 </head>
 <body>
   <main>
