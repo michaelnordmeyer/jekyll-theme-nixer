@@ -2,7 +2,7 @@
 
 The even more barebones cousin of the barebones theme [“Nix”](https://github.com/michaelnordmeyer/jekyll-theme-nix) for [Jekyll](https://github.com/jekyll/jekyll). It is optimized for fast build speeds as well.
 
-Its purpose is to be a hard-core minimalistic, single-author theme while not displaying anything more than just the content of posts and a list of posts.
+Its purpose is to be a hard-core minimalist, single-author theme while not displaying anything more than just the content of posts and a list of posts.
 
 It also changes as little as possible from the default browser settings to improve legibility.
 
