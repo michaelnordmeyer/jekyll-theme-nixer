@@ -16,6 +16,8 @@ And people coming from hacker news or related sites know how to change the URL i
 
 If you think this goes too far, use the above mentioned [Jekyll theme “Nix”](https://github.com/michaelnordmeyer/jekyll-theme-nix) instead.
 
+[I wrote up what inspired me to create both themes](https://michaelnordmeyer.com/i-created-two-ultra-minimalistic-jekyll-themes).
+
 ## Limited Features
 
 - Dark mode, because we want to be respectful
