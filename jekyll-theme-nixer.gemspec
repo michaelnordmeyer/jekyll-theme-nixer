@@ -2,17 +2,19 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-nixer"
-  spec.version       = "1.1.1"
+  spec.version       = "1.1.2"
   spec.authors       = ["Michael Nordmeyer"]
   spec.email         = ["michaelnordmeyer@users.noreply.github.com"]
 
-  spec.summary       = "A hard-core minimalistic, single-author Jekyll theme with almost default browser styling, and a dark mode. Just a post list and posts, no menu, header, footer, or pages. Even the backlink from posts to home is missing."
+  spec.summary       = "A hard-core minimalist, single-author Jekyll theme with almost default browser styling, and a dark mode. Just a post list and posts, no menu, header, footer, or pages. Even the backlink from posts to home is missing."
   spec.homepage      = "https://github.com/michaelnordmeyer/jekyll-theme-nixer"
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|(CODE_OF_CONDUCT|LICENSE|README)((\.(txt|md|markdown)|$))|_config\.yml)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r!^(assets|_data|_layouts|_includes|_sass|(CODE_OF_CONDUCT|LICENSE|README)((\.(txt|md|markdown)|$))|_config\.yml)!i)
+  end
 
   spec.required_ruby_version = '>= 2.7.0' # according to jekyll.gemspec
 
