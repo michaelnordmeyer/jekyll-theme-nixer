@@ -40,7 +40,7 @@ Rest assured, this is the only bloat, as we already removed the date with the re
 
 ### Default Colors
 
-The default colors are the colors of the respective browsers, both in light mode and in dark mode.
+The default colors are the colors of the respective browsers, both in light and in dark mode.
 
 ### Favicon
 
