@@ -14,6 +14,8 @@ It is meant for people, who are aware that nobody is using RSS feeds anymore. Ei
 
 And people coming from hacker news or related sites know how to change the URL in the browser's address bar.
 
+If this theme feels to bloated to you, you can try [“Nixest”](https://github.com/michaelnordmeyer/jekyll-theme-nixest), the even less functional version of “Nix”.
+
 If you think this goes too far, use the above mentioned [Jekyll theme “Nix”](https://github.com/michaelnordmeyer/jekyll-theme-nix) instead.
 
 [I wrote up what inspired me to create both themes](https://michaelnordmeyer.com/i-created-two-ultra-minimalistic-jekyll-themes).
