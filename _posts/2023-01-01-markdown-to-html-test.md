@@ -2,9 +2,9 @@
 title: Markdown to HTML Test
 sitemap: false
 ---
-## HTML5 Tags Supported by Markdown
-
 These are the supported HTML tags, which will be generated from Markdown.
+
+## HTML Tags Supported by Markdown
 
 # Heading One
 ## Heading Two
@@ -94,7 +94,7 @@ This tag shows **bold** text.
 
 ---
 
-## HTML5 Tags Supported by Github-Flavored Markdown
+## HTML Tags Supported by Github-Flavored Markdown
 
 ### Tables
 
