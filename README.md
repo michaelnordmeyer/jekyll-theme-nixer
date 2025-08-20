@@ -103,7 +103,3 @@ remote_theme: michaelnordmeyer/jekyll-theme-nixer
 ```
 
 Make sure that this is the only `remote_theme:` in `_config.yml`, and that there are no other `theme:`.
-
-## Styled Sitemap.xml
-
-A `sitemap.xsl` is included in the theme to style the `sitemap.xml` while being displayed in the browser. For a standard Jekyll installation, they work out-of-the-box if both files are copied to the Jekyll directory.
