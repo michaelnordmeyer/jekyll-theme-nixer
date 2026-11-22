@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-nixer"
-  spec.version       = "1.1.6"
+  spec.version       = "1.1.7"
   spec.authors       = ["Michael Nordmeyer"]
   spec.email         = ["michaelnordmeyer@users.noreply.github.com"]
 

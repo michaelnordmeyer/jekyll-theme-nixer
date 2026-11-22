@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" dir="{{ site.theme_settings.lang_direction | default: 'ltr' }}">
 <head>
 {% include default-head.html %}
-  <title>{%- if page.title -%}{{ page.title | smartify }}{%- else -%}{{ site.title | smartify }}{%- endif -%}</title>
+  <title>{% if page.title %}{{ page.title | smartify }}{% else %}{{ site.title | smartify }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | smartify }}{% else %}{{ site.description | smartify }}{% endif %}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
 {% include_cached style.html %}
